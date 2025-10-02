@@ -1,0 +1,186 @@
+body {
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass {
+    color: #fe424d;
+    font-size:2rem ;
+}
+.nav-link {
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+
+}
+
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    
+}
+.f-info {
+    text-align: center;
+    height: 8rem;
+    display: flex;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+
+  
+}
+ /* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight:400 !important ;
+}
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect  */
+.card-img-overlay {
+    opacity: 0;
+
+}
+.card-img-overlay:hover {
+opacity: 0.2;
+background-color: aquamarine;
+}
+
+/* new page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+    padding: 12px 15px !important;
+
+}
+
+/* edit button */
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show image */
+.show-img {
+    height: 30vh;
+}
+/* show btns */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+   
+
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-check {
+    margin-right: 20px;
+    padding-left: 20px;
+    margin: 50px;
+}
+* Responsive Styles */
+
+/* For Tablets and smaller devices */
+@media (max-width: 992px) {
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .f-info {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .f-info-links, .f-info-socials, .f-info-brand {
+        width: 100%;
+        padding: 0.5rem 0;
+        justify-content: center;
+    }
+
+    .form-check {
+        margin: 20px;
+          padding-left: 10px;
+    }
+
+    .show-img {
+        height: 40vh;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btns .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* For small mobile phones */
+@media (max-width: 480px) {
+    .fa-compass {
+        font-size: 1.5rem;
+         }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .add-btn, .edit-btn {
+        padding: 8px 10px !important;
+    }
+}
